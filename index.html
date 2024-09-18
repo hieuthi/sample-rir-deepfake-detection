@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html><head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8CK02G9MB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V8CK02G9MB');
+    </script>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Reverberant Fake Speech for "Room Impulse Responses help attackers to evade Deep Fake Detection"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+      table {
+        border: None;
+        border-bottom: solid 3px #000;
+        border-top: solid 3px #000;
+        border-right: solid 3px #000;
+        border-left: solid 3px #000;
+      }
+      table td,
+      table th
+      {
+        text-align:left;
+        padding: 4px 4px;
+      }
+      .play-btn {
+        padding: 4px 16px;
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 2px;
+        color: #000;
+        margin: 0px;
+      }
+      .play-btn:hover {
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+      }
+      .play-btn.playing{
+        color: #000 !important;
+        background-color: #FF7F0E;
+
+      }
+      td {
+        border: none;
+      }
+
+      th {
+        border: None;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+
+      .overflow {
+        text-align: center;
+        color: #fff;
+        background-color: #000;
+        border: solid 1px #000;
+      }
+      .sample-entry {
+        margin-top: 16px;
+      }
+
+      .textboard {
+        font-family:'Lucida Console', monospace;
+        word-wrap: break-word;
+        margin-bottom: 8px;
+        font-size: 8px;
+      }
+      .textboard p{
+        margin: 0;
+        color: orange;
+      }
+      .highlight {
+        color: blue;
+      }
+
+    </style>
+    <script>
+
+</script>
+    <script type="text/javascript">
+      function play(audioElement){
+        audioElement.play();
+        audioElement.parentElement.classList.add("playing");
+
+      }
+
+      function onEnd(audioElement){
+        audioElement.parentElement.classList.remove("playing");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-12">
+        <row>
+          <h1>Reverberant Fake Speech for "Room Impulse Responses help attackers to evade Deep Fake Detection"</h1>
+          <h4>Authors: Hieu-Thi Luong, Duc-Tuan Truong, Kong Aik Lee, Eng Siong Chng</h4>
+          <p>Pre-print version of this paper will be published soon</p>
+        </row>
+      </div>
+      <div class="col-md-12">
+
+      <h2>Reverberant Fake Speech</h2>
+      <p> The fake utterance belong to the C1 subset of ASVspoof 2021 DF task.
+      <div class="row">
+        <div class="col-md-6 sample-entry">
+          <p></p>
+
+          <table border="1">
+            <tbody>
+            <tr>
+              <th style="border: solid 1px; text-align:right; padding-right:8px;">Fake</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> DF_E_2255766.wav</span></td>
+            </tr>
+            <tr>
+              <th style="border: solid 1px; text-align:right; padding-right:8px;">Fake w/ RIR</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> DF_E_2255766.wav + recorded_rir.wav</span></td>
+            </tr>
+            <tr>
+              <td style="border: solid 1px; text-align:right;">T60 = 2.0</td> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"></td>
+            </tr>
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">1.5</td>
+              <td style="border-right: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A0.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A1.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A2.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A3.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">1.0</td>
+              <td style="border-right: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A4.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A5.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A6.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A7.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">0.5</td>
+              <td style="border-right: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A8.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A9.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A10.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A11.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border-right: solid 1px; border-bottom: solid 1px; text-align:right">0.0</td>
+              <td style="border-right: solid 1px; border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A12.wav"></audio>► Play</a>
+              </td>
+              <td style="border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A13.wav"></audio>► Play</a>
+              </td>
+              <td style="border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A14.wav"></audio>► Play</a>
+              </td>
+              <td style="border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_2255766_A15.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">DRR = -10.0</td>
+              <td style="width: 100px; text-align:right">0</td>
+              <td style="width: 100px; text-align:right">10</td>
+              <td style="width: 100px; text-align:right">20</td>
+              <td style="width: 100px; text-align:right">30</td>
+            </tr>
+
+          </tbody></table>
+          <br>
+          <br>
+        </div>
+
+
+        <div class="col-md-6 sample-entry">
+          <p></p>
+
+          <table border="1">
+            <tbody>
+            <tr>
+              <th style="border: solid 1px; text-align:right; padding-right:8px;">Fake</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> DF_E_3532602.wav</span></td>
+            </tr>
+            <tr>
+              <th style="border: solid 1px; text-align:right; padding-right:8px;">Fake w/ RIR</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> DF_E_3532602.wav + recorded_rir.wav</span></td>
+            </tr>
+            <tr>
+              <td style="border: solid 1px; text-align:right;">T60 = 2.0</td> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"></td>
+            </tr>
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">1.5</td>
+              <td style="border-right: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B0.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B1.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B2.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B3.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">1.0</td>
+              <td style="border-right: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B4.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B5.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B6.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B7.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">0.5</td>
+              <td style="border-right: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B8.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B9.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B10.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B11.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border-right: solid 1px; border-bottom: solid 1px; text-align:right">0.0</td>
+              <td style="border-right: solid 1px; border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B12.wav"></audio>► Play</a>
+              </td>
+              <td style="border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B13.wav"></audio>► Play</a>
+              </td>
+              <td style="border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B14.wav"></audio>► Play</a>
+              </td>
+              <td style="border-bottom: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/DF_E_3532602_B15.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border-right: solid 1px; text-align:right">DRR = -10.0</td>
+              <td style="width: 100px; text-align:right">0</td>
+              <td style="width: 100px; text-align:right">10</td>
+              <td style="width: 100px; text-align:right">20</td>
+              <td style="width: 100px; text-align:right">30</td>
+            </tr>
+
+          </tbody></table>
+          <br>
+          <br>
+        </div>
+      </div>
+
+    </div>
+    <p>
+
+
+
+<row>
+    </row></p><p style="padding-bottom: 32px; visibility: hidden">asdasdas</p>
+    <p></p>
+  
+
+
+    </div>
+  
+
+
+
+
+</body></html>
